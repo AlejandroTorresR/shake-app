@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding">
+  	<ion-input [(ngModel)]="shakeService.show" (ionChange)="changeShow()" *ngIf="shakeService.show" [hidden]="true"></ion-input>
+    <ion-button color="danger" (click)="changeShow()" expand="block">Stop</ion-button>
+    <ion-button (click)="startWatching()" expand="block">Start</ion-button>
+    <h2>X: {{shakeService.lastX}}</h2>
+    <h2>Y: {{shakeService.lastY}}</h2>
+    <h2>Z: {{shakeService.lastZ}}</h2>
+  </div>
+</ion-content>

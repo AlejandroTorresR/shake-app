@@ -1,0 +1,7 @@
+{
+  "name": "shakeApp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
